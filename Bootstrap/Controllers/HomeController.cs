@@ -10,22 +10,38 @@ namespace Bootstrap.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
+            return View("~/Views/Home/Login.cshtml");
+        }        
+
+        public IActionResult Dashboard()
+        {
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Cards()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Tables()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
 
