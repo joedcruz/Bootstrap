@@ -29,6 +29,8 @@ namespace Bootstrap
                     options.LoginPath = "/Home/Login";
                 });
 
+            services.AddTransient<WebMenuService, WebMenuService>();
+
             services.AddMvc();
         }
 
